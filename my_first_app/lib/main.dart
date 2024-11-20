@@ -1,17 +1,17 @@
 import "package:flutter/material.dart";
 
 void main() {
-  runApp(const MyWidget());
+  runApp(const HomePage());
 }
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  State<MyWidget> createState() => _MyWidgetState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _MyWidgetState extends State<MyWidget> {
+class _HomePageState extends State<HomePage> {
 
   int count = 0;
 
