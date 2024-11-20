@@ -22,11 +22,16 @@ class _HomePageState extends State<HomePage> {
         length: 3, 
         child: Scaffold(
           appBar: AppBar(
+            title: const Text('Flutter TabBar'),
+            centerTitle: true,
+            backgroundColor: const Color.fromARGB(255, 118, 198, 235),
             bottom: const TabBar(
+              indicatorColor: Colors.blue,
+              unselectedLabelColor: Colors.grey,
               tabs: [
-                Tab(icon: Icon(Icons.directions_car)),
-                Tab(icon: Icon(Icons.directions_transit)),
-                Tab(icon: Icon(Icons.directions_bike))
+                Tab(text: "Home",),
+                Tab(text: "About"),
+                Tab(text: "Contact")
               ])
           ),
           body: const TabBarView(
